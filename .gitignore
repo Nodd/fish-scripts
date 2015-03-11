@@ -1,3 +1,7 @@
-# fish
+# Fish
 fish_history
 fishd.*
+
+# Tmp
+*.swp
+*~
