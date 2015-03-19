@@ -12,3 +12,7 @@ end
 #        exec startx
 #    end
 #end
+
+for host in (~/.config/fish/hosts.py)
+    alias $host "ssh -YC $host"
+end
