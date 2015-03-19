@@ -1,6 +1,6 @@
 set --erase fish_greeting
 
-for dir in /usr/local/anaconda/bin ~/bin ~/.bin
+for dir in /usr/local/bin /usr/local/anaconda/bin ~/bin ~/.bin
     if [ -d $dir ]
         set PATH $dir $PATH
     end
