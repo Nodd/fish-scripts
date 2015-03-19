@@ -6,13 +6,16 @@ for dir in /usr/local/bin /usr/local/anaconda/bin ~/bin ~/.bin
     end
 end
 
+alias lt "ls -lrt"
+
+for host in (~/.config/fish/hosts.py)
+    alias $host "ssh -YC $host"
+end
+
+
 # start X at login
 #if status --is-login
 #    if test -z "$DISPLAY" -a $XDG_VTNR = 1
 #        exec startx
 #    end
 #end
-
-for host in (~/.config/fish/hosts.py)
-    alias $host "ssh -YC $host"
-end
